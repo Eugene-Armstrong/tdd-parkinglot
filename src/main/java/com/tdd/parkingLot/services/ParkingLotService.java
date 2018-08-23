@@ -15,7 +15,7 @@ public class ParkingLotService {
     }
 
     public ParkingLot addNewParkingLot(ParkingLot parkingLot) {
-        return null;
+        return parkingLotRepository.save(parkingLot);
     }
 
 }

@@ -5,6 +5,8 @@ import com.tdd.parkingLot.repositories.ParkingLotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ParkingLotService {
     @Autowired
@@ -15,6 +17,10 @@ public class ParkingLotService {
 
     public ParkingLotService(ParkingLotRepository parkingLotRepository) {
         this.parkingLotRepository = parkingLotRepository;
+    }
+
+    public static List<ParkingLot> findAllParkingLot() {
+        return null;
     }
 
     public ParkingLot addNewParkingLot(ParkingLot parkingLot) {

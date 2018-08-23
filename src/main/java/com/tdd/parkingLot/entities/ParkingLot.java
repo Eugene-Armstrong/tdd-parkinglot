@@ -1,14 +1,21 @@
 package com.tdd.parkingLot.entities;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
+@Table(name = "tw_employee")
 @Entity
 public class ParkingLot {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private int initSize;
     public ParkingLot(String name, int initSize) {
         this.name = name;
         this.initSize = initSize;
+    }
+
+    public ParkingLot() {
     }
 
     public String getName() {

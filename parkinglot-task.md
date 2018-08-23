@@ -12,3 +12,8 @@
     given
     when call ParkingLotService.findAllParkingLot()
     then return list of parkingLots
+
+4. ParkingLotControllerTest - find all parking-lots
+    given
+    when get("/parkinglots")
+    then return status code is 200

@@ -19,8 +19,9 @@ public class ParkingLotService {
         this.parkingLotRepository = parkingLotRepository;
     }
 
-    public static List<ParkingLot> findAllParkingLot() {
-        return null;
+    public List<ParkingLot> findAllParkingLots() {
+        System.out.println(parkingLotRepository.findAll());
+        return parkingLotRepository.findAll();
     }
 
     public ParkingLot addNewParkingLot(ParkingLot parkingLot) {

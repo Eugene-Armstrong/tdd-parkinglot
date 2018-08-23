@@ -64,7 +64,7 @@ public class ParkingLotControllerTest {
 
         resultActions.andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(2)))
-                .andExpect(jsonPath("$[0].name", containsString("1号停车场")))
+                .andExpect(jsonPath("$[0].name", is("1号停车场")))
                 .andExpect(jsonPath("$[0].initSize", is(10)));
     }
 }

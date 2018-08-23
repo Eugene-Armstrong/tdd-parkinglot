@@ -2,7 +2,6 @@ package com.tdd.parkingLot.entities;
 
 import javax.persistence.*;
 
-@Table(name = "tw_employee")
 @Entity
 public class ParkingLot {
     @Id

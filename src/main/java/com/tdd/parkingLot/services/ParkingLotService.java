@@ -20,7 +20,6 @@ public class ParkingLotService {
     }
 
     public List<ParkingLot> findAllParkingLots() {
-        System.out.println(parkingLotRepository.findAll());
         return parkingLotRepository.findAll();
     }
 

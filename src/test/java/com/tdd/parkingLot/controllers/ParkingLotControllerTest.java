@@ -2,7 +2,6 @@ package com.tdd.parkingLot.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tdd.parkingLot.entities.ParkingLot;
-import com.tdd.parkingLot.repositories.ParkingLotRepository;
 import com.tdd.parkingLot.services.ParkingLotService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,10 +17,8 @@ import org.springframework.test.web.servlet.ResultActions;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
